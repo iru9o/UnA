@@ -70,7 +70,7 @@ export const recipes: Recipe[] = [
 
   // Drink Station (52 recipes) — JSON default_duration 10s, some have 8s overrides
   { name: 'Red Velvet Coffee Latte', station: 'drink_station', ingredients: [{ name: 'Ice Cream', amount: 1 }, { name: 'Milk', amount: 1 }, { name: 'Brown Sugar', amount: 1 }, { name: 'Sugar', amount: 1 }, { name: 'Cut Lemon', amount: 1 }], duration: 10 },
-  { name: 'Capuccino Latte', station: 'drink_station', ingredients: [{ name: 'Ice Cream', amount: 1 }, { name: 'Milk', amount: 1 }, { name: 'Brown Sugar', amount: 1 }, { name: 'Sugar', amount: 1 }, { name: 'Cut Lemon', amount: 1 }], duration: 10 },
+  { name: 'Capucinno Latte', station: 'drink_station', ingredients: [{ name: 'Sugar', amount: 1 }, { name: 'Yogurt', amount: 1 }, { name: 'Ice Cream', amount: 1 }, { name: 'Cut Watermelon', amount: 1 }, { name: 'Brown Sugar', amount: 1 }], duration: 10 },
   { name: 'Caramel Macchiato', station: 'drink_station', ingredients: [{ name: 'Brown Sugar', amount: 1 }, { name: 'Cinnamon', amount: 1 }, { name: 'Sugar', amount: 1 }, { name: 'Milk', amount: 1 }], duration: 8 },
   { name: 'Hot Choco Milk', station: 'drink_station', ingredients: [{ name: 'Brown Sugar', amount: 1 }, { name: 'Cinnamon', amount: 1 }, { name: 'Milk', amount: 1 }, { name: 'Ice Cream', amount: 1 }], duration: 8 },
   { name: 'Milktuy', station: 'drink_station', ingredients: [{ name: 'Ice Cube', amount: 1 }, { name: 'Cut Lemon', amount: 1 }, { name: 'Milk', amount: 1 }, { name: 'Mint', amount: 1 }, { name: 'Yogurt', amount: 1 }], duration: 10 },

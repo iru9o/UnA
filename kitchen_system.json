@@ -529,7 +529,7 @@
           ]
         },
         {
-          "output": "Capuccino Latte",
+          "output": "Capucinno Latte",
           "ingredients": [
             "Cut Watermelon",
             "Sugar",
@@ -1465,8 +1465,7 @@
         "Zuppa Soup"
       ],
       "drink_options": [
-        "Capuccino Latte",
-        "Sakura Jasmine Peach"
+        "Capucinno Latte"
       ]
     },
     "Menu_Apipi": {

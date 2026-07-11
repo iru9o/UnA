@@ -22,7 +22,7 @@ export const DAILY_MENU: DailyMenu = {
   Sabtu: { food: 'Bouillabaisse', drink: 'Purple Butterfly Pea Lemonade' },
   Minggu: {
     food_options: ['Cheesecake Strawberry', 'Cake Red Velvet', 'Zuppa Soup'],
-    drink_options: ['Capuccino Latte']
+    drink_options: ['Capucinno Latte']
   },
   Menu_Apipi: {
     food_options: ['Cokelat Bucket Strawberry', 'Dubai Chewy Mochii', 'Lovey-Dovey Donuts', 'Pudding Lovely Bears'],
