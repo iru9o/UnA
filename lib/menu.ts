@@ -26,7 +26,7 @@ export const DAILY_MENU: DailyMenu = {
   },
   Menu_Apipi: {
     food_options: ['Cokelat Bucket Strawberry', 'Dubai Chewy Mochii', 'Lovey-Dovey Donuts', 'Pudding Lovely Bears'],
-    drink_options: ['Ice Cream Strawberry', 'Ice Cream Cokelat Strawberry', 'Ice Cream Vanilla', 'Ice Cream Matcha', 'Ice Cream Lele']
+    drink_options: ['Ice Cream Strawberry', 'Ice Cream Cokelat Strawberry', 'Ice Cream Vanilla', 'Ice Cream Matcha']
   }
 }
 
