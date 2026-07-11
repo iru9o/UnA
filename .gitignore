@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js Build & Cache
+/.next/
+/out/
+
+# Production Build
+/build
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment Variables
+.env*.local
+
+# Vercel Configuration
+.vercel
+
+# TypeScript Build Info
+*.tsbuildinfo
+next-env.d.ts
+
+# Documentation & Local Notes (AI plan folders)
+/docs/
+/research.md
+
+# SQLite Database (Obsolete)
+/data/

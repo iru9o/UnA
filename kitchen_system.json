@@ -1,0 +1,1510 @@
+{
+  "server_info": {
+    "server_name": "IME Roleplay Indonesia",
+    "system_name": "Restaurant Kitchen System"
+  },
+  "kitchen_database": {
+    "utensils": [
+      "Kitchen Knife",
+      "Meat Cleaver",
+      "Blender",
+      "Whisks",
+      "Slicer",
+      "Scooper",
+      "Grater"
+    ],
+    "ingredients": [
+      "Milk",
+      "Eggs",
+      "Butter",
+      "Yogurt",
+      "Mozzarella Cheese",
+      "Cheddar Cheese",
+      "Ice Cream",
+      "Ketchup",
+      "Mustard",
+      "BBQ Sauce",
+      "Mint",
+      "Chili Powder",
+      "Salt",
+      "Cinnamon",
+      "Paprika",
+      "Soda",
+      "Ice Cube",
+      "Packaged Chicken",
+      "Packaged Fish",
+      "Raw Meat",
+      "Flour",
+      "Poppy"
+    ],
+    "crops": [
+      "Carrot",
+      "Corn",
+      "Cucumber",
+      "Garlic",
+      "Potato",
+      "Tomato",
+      "Strawberry",
+      "Orange",
+      "Lemon",
+      "Watermelon",
+      "Cabbage",
+      "Onion",
+      "Wheat",
+      "Barley",
+      "Sugarbeet",
+      "Rice",
+      "Red Pepper"
+    ]
+  },
+  "stations": {
+    "cutting_board": {
+      "default_duration_seconds": 4,
+      "default_output_quantity": 5,
+      "recipes": [
+        {
+          "output": "Bread Loaf",
+          "utensil": "Whisks",
+          "ingredients": {
+            "Wheat": 5
+          }
+        },
+        {
+          "output": "Brown Sugar",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Sugarbeet": 5
+          }
+        },
+        {
+          "output": "Burger Buns",
+          "utensil": "Blender",
+          "ingredients": {
+            "Flour": 5
+          }
+        },
+        {
+          "output": "Chicken Strips",
+          "utensil": "Meat Cleaver",
+          "ingredients": {
+            "Packaged Chicken": 5
+          }
+        },
+        {
+          "output": "Chicken Wings",
+          "utensil": "Meat Cleaver",
+          "ingredients": {
+            "Packaged Chicken": 5
+          }
+        },
+        {
+          "output": "Chopped Cabbage",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Cabbage": 5
+          }
+        },
+        {
+          "output": "Chopped Carrot",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Carrot": 5
+          }
+        },
+        {
+          "output": "Chopped Cucumber",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Cucumber": 5
+          }
+        },
+        {
+          "output": "Chopped Red Pepper",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Red Pepper": 5
+          }
+        },
+        {
+          "output": "Chopped Tomato",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Tomato": 5
+          }
+        },
+        {
+          "output": "Corn On The Cob",
+          "utensil": "Blender",
+          "ingredients": {
+            "Corn": 5
+          }
+        },
+        {
+          "output": "Cooked Rice",
+          "utensil": "Whisks",
+          "ingredients": {
+            "Rice": 5
+          }
+        },
+        {
+          "output": "Cubbed Cheddar Cheese",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Cheddar Cheese": 5
+          }
+        },
+        {
+          "output": "Cubbed Mozzarella Cheese",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Mozzarella Cheese": 5
+          }
+        },
+        {
+          "output": "Cut Lemon",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Lemon": 5
+          }
+        },
+        {
+          "output": "Cut Orange",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Orange": 5
+          }
+        },
+        {
+          "output": "Cut Poppy",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Poppy": 5
+          }
+        },
+        {
+          "output": "Cut Strawberry",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Strawberry": 5
+          }
+        },
+        {
+          "output": "Cut Watermelon",
+          "utensil": "Kitchen Knife",
+          "ingredients": {
+            "Watermelon": 5
+          }
+        },
+        {
+          "output": "Raw Beef Tenderloin",
+          "utensil": "Blender",
+          "ingredients": {
+            "Raw Meat": 5
+          }
+        },
+        {
+          "output": "Fish Fillet",
+          "utensil": "Meat Cleaver",
+          "ingredients": {
+            "Packaged Fish": 5
+          }
+        },
+        {
+          "output": "Flat Bread",
+          "utensil": "Whisks",
+          "ingredients": {
+            "Bread Loaf": 5
+          }
+        },
+        {
+          "output": "Flour",
+          "utensil": "Whisks",
+          "ingredients": {
+            "Wheat": 5
+          }
+        },
+        {
+          "output": "Garlic Powder",
+          "utensil": "Blender",
+          "ingredients": {
+            "Garlic": 5
+          }
+        },
+        {
+          "output": "Lasagna Noodles",
+          "utensil": "Grater",
+          "ingredients": {
+            "Flour": 5
+          }
+        },
+        {
+          "output": "Macaroni Noodles",
+          "utensil": "Grater",
+          "ingredients": {
+            "Flour": 5
+          }
+        },
+        {
+          "output": "Onion Powder",
+          "utensil": "Blender",
+          "ingredients": {
+            "Onion": 5
+          }
+        },
+        {
+          "output": "Pepper",
+          "utensil": "Blender",
+          "ingredients": {
+            "Red Pepper": 5
+          }
+        },
+        {
+          "output": "Sliced Potato",
+          "utensil": "Slicer",
+          "ingredients": {
+            "Potato": 5
+          }
+        },
+        {
+          "output": "Ramen Noodles",
+          "utensil": "Grater",
+          "ingredients": {
+            "Flour": 5
+          }
+        },
+        {
+          "output": "Roast Beef",
+          "utensil": "Blender",
+          "ingredients": {
+            "Raw Meat": 5
+          }
+        },
+        {
+          "output": "Sliced red pepper",
+          "utensil": "Slicer",
+          "ingredients": {
+            "Red Pepper": 5
+          }
+        },
+        {
+          "output": "Tomato Slices",
+          "utensil": "Slicer",
+          "ingredients": {
+            "Tomato": 5
+          }
+        },
+        {
+          "output": "String Cheddar Cheese",
+          "utensil": "Grater",
+          "ingredients": {
+            "Cheddar Cheese": 5
+          }
+        },
+        {
+          "output": "String Mozzarella Cheese",
+          "utensil": "Grater",
+          "ingredients": {
+            "Mozzarella Cheese": 5
+          }
+        },
+        {
+          "output": "Sugar",
+          "utensil": "Blender",
+          "ingredients": {
+            "Sugarbeet": 5
+          }
+        }
+      ]
+    },
+    "fry_station": {
+      "default_duration_seconds": 8,
+      "default_output_quantity": 10,
+      "recipes": [
+        {
+          "output": "Kukituy",
+          "ingredients": [
+            "Eggs",
+            "Butter",
+            "Flour",
+            "Bread Loaf"
+          ]
+        },
+        {
+          "output": "Tahu Bulat",
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Flour",
+            "Salt"
+          ]
+        },
+        {
+          "output": "Gorengan",
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Flour",
+            "Salt"
+          ]
+        },
+        {
+          "output": "Nasi Kuning",
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Flour",
+            "Salt"
+          ]
+        },
+        {
+          "output": "Sushi Platter",
+          "ingredients": [
+            "Salt",
+            "Sliced Potato",
+            "Chicken Strips",
+            "BBQ Sauce"
+          ]
+        },
+        {
+          "output": "Bakso",
+          "ingredients": [
+            "Pepper",
+            "Chili Powder",
+            "Flour",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Spaghetti Aglio E Olio",
+          "ingredients": [
+            "Eggs",
+            "Ramen Noodles",
+            "Flour",
+            "Pepper"
+          ]
+        },
+        {
+          "output": "Zuppa Soup",
+          "ingredients": [
+            "Flat Bread",
+            "Garlic Powder",
+            "Tomato Slices",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Mukidi Kove",
+          "ingredients": [
+            "Pepper",
+            "Chili Powder",
+            "Flour",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Ayam Penyet Mas Jackson",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Butter",
+            "Bread Loaf",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Fajitas",
+          "ingredients": [
+            "Burger Buns",
+            "Chopped Cucumber",
+            "Tomato Slices",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Tacos Al Pastor",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Butter",
+            "Chili Powder",
+            "Pepper",
+            "Chicken Wings",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Albondigas",
+          "ingredients": [
+            "Sliced Potato",
+            "Cooked Rice",
+            "Garlic Powder",
+            "Raw Beef Tenderloin"
+          ]
+        },
+        {
+          "output": "Tostadas",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Eggs",
+            "Mozzarella Cheese",
+            "Chicken Strips",
+            "Salt",
+            "Macaroni Noodles"
+          ]
+        },
+        {
+          "output": "Chakalaka & PAP",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Chicken Strips",
+            "BBQ Sauce",
+            "Chopped Tomato"
+          ]
+        },
+        {
+          "output": "Bouillabaisse",
+          "ingredients": [
+            "Flat Bread",
+            "Garlic Powder",
+            "Tomato Slices",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Tira Miss You Cake",
+          "duration_seconds": 6,
+          "ingredients": [
+            "Eggs",
+            "Flour",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Martabak Aci Gulung",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Butter",
+            "Bread Loaf",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Limit & Lilis Fry",
+          "duration_seconds": 10,
+          "ingredients": [
+            "Eggs",
+            "Sliced Potato",
+            "Butter",
+            "Bread Loaf",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Mie Ayam Goat",
+          "ingredients": [
+            "Burger Buns",
+            "Chopped Cucumber",
+            "Tomato Slices",
+            "Chicken Wings"
+          ]
+        }
+      ]
+    },
+    "drink_station": {
+      "default_duration_seconds": 10,
+      "default_output_quantity": 10,
+      "recipes": [
+        {
+          "output": "Red Velvet Coffee Latte",
+          "ingredients": [
+            "Cut Watermelon",
+            "Sugar",
+            "Brown Sugar",
+            "Ice Cream",
+            "Yogurt"
+          ]
+        },
+        {
+          "output": "Capuccino Latte",
+          "ingredients": [
+            "Cut Watermelon",
+            "Sugar",
+            "Brown Sugar",
+            "Ice Cream",
+            "Yogurt"
+          ]
+        },
+        {
+          "output": "Caramel Macchiato",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Brown Sugar",
+            "Cinnamon",
+            "Sugar",
+            "Milk"
+          ]
+        },
+        {
+          "output": "Hot Choco Milk",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Brown Sugar",
+            "Cinnamon",
+            "Milk",
+            "Ice Cream"
+          ]
+        },
+        {
+          "output": "Milktuy",
+          "ingredients": [
+            "Ice Cube",
+            "Cut Lemon",
+            "Milk",
+            "Mint",
+            "Yogurt"
+          ]
+        },
+        {
+          "output": "Berrysuy",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Ice Cube",
+            "Cut Strawberry",
+            "Sugar",
+            "Milk"
+          ]
+        },
+        {
+          "output": "Es Teh Cekek",
+          "ingredients": [
+            "Ice Cube",
+            "Cut Lemon",
+            "Sugar",
+            "Soda",
+            "Mint"
+          ]
+        },
+        {
+          "output": "Kopi Hitam",
+          "ingredients": [
+            "Ice Cube",
+            "Cut Lemon",
+            "Sugar",
+            "Soda",
+            "Mint"
+          ]
+        },
+        {
+          "output": "Es Teh",
+          "ingredients": [
+            "Ice Cube",
+            "Cut Lemon",
+            "Sugar",
+            "Soda",
+            "Mint"
+          ]
+        },
+        {
+          "output": "Ice Cream Strawberry",
+          "ingredients": [
+            "Ice Cream",
+            "Sugar",
+            "Milk",
+            "Cut Lemon",
+            "Cut Strawberry"
+          ]
+        },
+        {
+          "output": "Long Black Coffee",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Brown Sugar",
+            "Cinnamon",
+            "Milk",
+            "Ice Cream"
+          ]
+        },
+        {
+          "output": "Ice Cream Cokelat Strawberry",
+          "ingredients": [
+            "Ice Cream",
+            "Sugar",
+            "Milk",
+            "Cut Lemon",
+            "Cut Strawberry"
+          ]
+        },
+        {
+          "output": "Spongnya Ichigo Frappe",
+          "ingredients": [
+            "Ice Cream",
+            "Milk",
+            "Brown Sugar",
+            "Sugar",
+            "Cut Lemon"
+          ]
+        },
+        {
+          "output": "Coconut Limade",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Brown Sugar",
+            "Cinnamon",
+            "Milk",
+            "Ice Cream"
+          ]
+        },
+        {
+          "output": "Black Tea",
+          "ingredients": [
+            "Cinnamon",
+            "Sugar",
+            "Brown Sugar",
+            "Milk",
+            "Yogurt"
+          ]
+        },
+        {
+          "output": "Jus Mengkudu",
+          "ingredients": [
+            "Ice Cube",
+            "Cut Lemon",
+            "Milk",
+            "Mint",
+            "Yogurt"
+          ]
+        },
+        {
+          "output": "Es Jeruk",
+          "ingredients": [
+            "Ice Cube",
+            "Ice Cream",
+            "Cut Lemon",
+            "Milk",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Red Rooibos",
+          "ingredients": [
+            "Cinnamon",
+            "Yogurt",
+            "Milk",
+            "Cut Strawberry",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Ice Coklat",
+          "ingredients": [
+            "Milk",
+            "Yogurt",
+            "Mint",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Ice Lemon Tea",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Cut Strawberry",
+            "Ice Cube",
+            "Soda",
+            "Cut Watermelon"
+          ]
+        },
+        {
+          "output": "Ice Cream Vanilla",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Milk",
+            "Cut Strawberry",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Jasmine Milk Creamy",
+          "ingredients": [
+            "Cut Lemon",
+            "Soda",
+            "Cut Strawberry",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Kolave",
+          "ingredients": [
+            "Cut Lemon",
+            "Soda",
+            "Mint",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Iced Biscoff Creamy Milk",
+          "ingredients": [
+            "Cut Lemon",
+            "Milk",
+            "Brown Sugar",
+            "Ice Cube",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Sakura Jasmine Peach",
+          "ingredients": [
+            "Cinnamon",
+            "Yogurt",
+            "Milk",
+            "Cut Strawberry",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Ice Cream Matcha",
+          "ingredients": [
+            "Ice Cream",
+            "Sugar",
+            "Milk",
+            "Cut Lemon",
+            "Cut Strawberry"
+          ]
+        },
+        {
+          "output": "30 Nights Milk",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Hot Choco Jackson Edition",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Ice Cream Lele",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "C&O Cola",
+          "ingredients": [
+            "Cut Lemon",
+            "Yogurt",
+            "Brown Sugar",
+            "Ice Cube",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Cocacino",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Iced Berry Manuka Americano",
+          "ingredients": [
+            "Cut Strawberry",
+            "Cut Watermelon",
+            "Mint",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Blue Lemon Soda",
+          "ingredients": [
+            "Cut Lemon",
+            "Soda",
+            "Brown Sugar",
+            "Ice Cube",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Mango Yakult Fizz",
+          "ingredients": [
+            "Soda",
+            "Cut Watermelon",
+            "Mint",
+            "Cut Orange",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Strawberry Matcha Fusion",
+          "ingredients": [
+            "Soda",
+            "Cut Watermelon",
+            "Cut Strawberry",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Montblanc Creamy Latte",
+          "ingredients": [
+            "Soda",
+            "Cut Orange",
+            "Cut Strawberry",
+            "Cinnamon",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Purple Butterfly Pea Lemonade",
+          "ingredients": [
+            "Cut Lemon",
+            "Soda",
+            "Cut Strawberry",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Limit & Lilis Choco",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Energy Major",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Limit & Lilis Strawberry",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Ice Lychee Tea 1",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Es Jeruk Segar",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Lilis & Ningsih Lemonade",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Benchy Strawberry Milk",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Iced Matcha Strawberry Latte",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Yerba Mate Goat",
+          "ingredients": [
+            "Cut Strawberry",
+            "Cut Watermelon",
+            "Mint",
+            "Sugar",
+            "Ice Cube"
+          ]
+        },
+        {
+          "output": "Ice Lychee Tea 2",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Monna Ice Coffe",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Sobi Smothies",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Milkshake Vanilla Glencin",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Es The Gracek",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        },
+        {
+          "output": "Milkshake Strawberry With Love",
+          "ingredients": [
+            "Cut Lemon",
+            "Ice Cube",
+            "Mint",
+            "Brown Sugar",
+            "Sugar"
+          ]
+        }
+      ]
+    },
+    "stove": {
+      "default_duration_seconds": 10,
+      "default_output_quantity": 10,
+      "recipes": [
+        {
+          "output": "Macaroon",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Burger Buns",
+            "Flour",
+            "Eggs",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Cheesecake Strawberry",
+          "ingredients": [
+            "Flat Bread",
+            "Salt",
+            "Eggs",
+            "Butter",
+            "String Cheddar Cheese"
+          ]
+        },
+        {
+          "output": "Ginger Cookies",
+          "duration_seconds": 6,
+          "ingredients": [
+            "Flour",
+            "Flat Bread",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Kukituy",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Bread Loaf",
+            "Flour",
+            "Eggs",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Dorasuy",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Burger Buns",
+            "Flour",
+            "Eggs",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Nailong",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Eggs",
+            "Flour",
+            "Chicken Wings"
+          ]
+        },
+        {
+          "output": "Sushi Platter",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Sliced Potato",
+            "BBQ Sauce",
+            "Chicken Strips",
+            "Salt"
+          ]
+        },
+        {
+          "output": "Puding Lele",
+          "duration_seconds": 6,
+          "ingredients": [
+            "Bread Loaf",
+            "Flour",
+            "Eggs"
+          ]
+        },
+        {
+          "output": "Pain Au Chocolat",
+          "duration_seconds": 6,
+          "ingredients": [
+            "Flour",
+            "Flat Bread",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Cokelat Bucket Strawberry",
+          "ingredients": [
+            "Burger Buns",
+            "Butter",
+            "Eggs",
+            "String Cheddar Cheese",
+            "Salt"
+          ]
+        },
+        {
+          "output": "Suplli",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Eggs",
+            "Flat Bread",
+            "Salt",
+            "String Cheddar Cheese"
+          ]
+        },
+        {
+          "output": "Caesar Salad",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Bread Loaf",
+            "Flour",
+            "Eggs",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Cokelat Dubai",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Bread Loaf",
+            "Flour",
+            "Eggs",
+            "Burger Buns"
+          ]
+        },
+        {
+          "output": "Dubai Chewy Mochii",
+          "ingredients": [
+            "Burger Buns",
+            "String Cheddar Cheese",
+            "Eggs",
+            "Flour",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Cookies Glen",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Bread Loaf",
+            "Flour",
+            "Eggs",
+            "Butter"
+          ]
+        },
+        {
+          "output": "Cake Red Velvet",
+          "ingredients": [
+            "Flat Bread",
+            "Salt",
+            "Eggs",
+            "Butter",
+            "String Cheddar Cheese"
+          ]
+        },
+        {
+          "output": "Pudding Lovely Bears",
+          "ingredients": [
+            "Burger Buns",
+            "Butter",
+            "Eggs",
+            "String Cheddar Cheese",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Lovey-Dovey Donuts",
+          "ingredients": [
+            "Burger Buns",
+            "Butter",
+            "Eggs",
+            "String Cheddar Cheese",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Spongnya Ichigo Shortcakes",
+          "duration_seconds": 8,
+          "ingredients": [
+            "Eggs",
+            "Flat Bread",
+            "Salt",
+            "String Cheddar Cheese"
+          ]
+        },
+        {
+          "output": "Thirty Bites Cookies",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Cookies Winterfeld",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Ckove",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Dead County MC",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Cheese Burger",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "My Beautiful Burger",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "C&O Sweet & Buttery Popcorn",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Dubai Cookies",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Limit & Lilis Stove",
+          "ingredients": [
+            "Bread Loaf",
+            "Sliced Potato",
+            "Butter",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Salmon Sushi Platter",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Ayam Nashville",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Lilis & Ningsih Ramen",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Benchy Cookies",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs-",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Ayam Hitam Madura",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Spaghetti Aglio Oliove",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Cookies Monna",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Sobi Cookies",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Katsu Glencin",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Nasi Goreng Maiaria",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        },
+        {
+          "output": "Baked With Love",
+          "ingredients": [
+            "Bread Loaf",
+            "Butter",
+            "Sliced Potato",
+            "Eggs",
+            "Flour"
+          ]
+        }
+      ]
+    }
+  },
+  "daily_menu": {
+    "Senin": {
+      "food": "Fajitas",
+      "drink": "Iced Berry Manuka Americano"
+    },
+    "Selasa": {
+      "food": "Tacos Al Pastor",
+      "drink": "Blue Lemon Soda"
+    },
+    "Rabu": {
+      "food": "Tostadas",
+      "drink": "Mango Yakult Fizz"
+    },
+    "Kamis": {
+      "food": "Albondigas",
+      "drink": "Strawberry Matcha Fusion"
+    },
+    "Jumat": {
+      "food": "Chakalaka & PAP",
+      "drink": "Montblanc Creamy Latte"
+    },
+    "Sabtu": {
+      "food": "Bouillabaisse",
+      "drink": "Purple Butterfly Pea Lemonade"
+    },
+    "Minggu": {
+      "food_options": [
+        "Cheesecake Strawberry",
+        "Cake Red Velvet",
+        "Zuppa Soup"
+      ],
+      "drink_options": [
+        "Capuccino Latte",
+        "Sakura Jasmine Peach"
+      ]
+    },
+    "Menu_Apipi": {
+      "food_options": [
+        "Cokelat Bucket Strawberry",
+        "Dubai Chewy Mochii",
+        "Lovey-Dovey Donuts",
+        "Pudding Lovely Bears"
+      ],
+      "drink_options": [
+        "Ice Cream Strawberry",
+        "Ice Cream Cokelat Strawberry",
+        "Ice Cream Vanilla",
+        "Ice Cream Matcha",
+        "Ice Cream Lele"
+      ]
+    }
+  },
+  "pricelist": {
+    "PAKET REGULER": {
+      "price": 700,
+      "description": "10 makan dan 10 minum"
+    },
+    "PAKET CUSTOM": {
+      "price": 800,
+      "description": "10 makan dan 10 minum"
+    },
+    "PAKET DELIVERY": {
+      "price": 800,
+      "description": "10 makan dan 10 minum"
+    },
+    "PAKET CUSTOM DELIVERY": {
+      "price": 900,
+      "description": "10 makan dan 10 minum"
+    },
+    "PAKET APIPI": {
+      "price": 1000,
+      "description": "10 makan dan 10 minum"
+    }
+  }
+}
