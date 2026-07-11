@@ -77,7 +77,7 @@ export function insertOrder(
   return newOrder
 }
 
-function calculateStatsForOrders(orders: Order[]): DailyStats {
+export function calculateStatsForOrders(orders: Order[]): DailyStats {
   const result: DailyStats = {
     reguler: { count: 0, base: 0 },
     custom: { count: 0, base: 0 },

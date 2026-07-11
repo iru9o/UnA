@@ -53,7 +53,7 @@ const VARIATIONS = [
     `/joball 🍟 RESTO UP N ATOM SERBA READY! 🍟 | 🎉 ${food} 🎉 + 🍹 ${drink} | Menu Apipi porsi berdua siap memanjakan lidah 👩‍❤️‍👨 | 🕒 Buka 24 jam | 📍 948 Roxwood | 📱 Companies App | Pesenan custom? Hubungi kami!`,
 
   (food: string, drink: string) =>
-    `/joball 🔔 DING DONG! KABAR GEMBIRA UP N ATOM BUKA FULL! 🔔 | Pas ada ${food} sama 💜 ${drink} | Menu Apipi spesial edisi pacaran ada kok 💞 | 🍳 Buka 24 jam | 📍 948 Roxwood | 📱 Cek Companies App | Custom orderan? Hubungi aja!`
+    `/joball 🔔 KABAR GEMBIRA UP N ATOM BUKA FULL! 🔔 | Pas ada ${food} sama 💜 ${drink} | Menu Apipi spesial edisi pacaran ada kok 💞 | 🍳 Buka 24 jam | 📍 948 Roxwood | 📱 Cek Companies App | Custom orderan? Hubungi aja!`
 ]
 
 export default function Announce() {
@@ -61,6 +61,7 @@ export default function Announce() {
     today: { food: string; drink: string }
   } | null>(null)
   const [variationIndex, setVariationIndex] = useState(0)
+  const [history, setHistory] = useState<number[]>([0])
   const [copied, setCopied] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -83,11 +84,29 @@ export default function Announce() {
   const isOverLimit = charCount > 250
 
   const shuffleVariation = () => {
-    let newIndex
-    do {
-      newIndex = Math.floor(Math.random() * VARIATIONS.length)
-    } while (newIndex === variationIndex && VARIATIONS.length > 1)
-    setVariationIndex(newIndex)
+    if (VARIATIONS.length <= 1) return
+
+    // Find indices that haven't been shown in the current shuffle cycle
+    const unused = Array.from({ length: VARIATIONS.length }, (_, i) => i)
+      .filter(i => !history.includes(i))
+
+    if (unused.length === 0) {
+      // All variation messages have been shown once. Reset the pool.
+      // To prevent repeating the current message immediately, filter it out.
+      const remaining = Array.from({ length: VARIATIONS.length }, (_, i) => i)
+        .filter(i => i !== variationIndex)
+      
+      const nextIndex = remaining.length > 0
+        ? remaining[Math.floor(Math.random() * remaining.length)]
+        : 0
+      setVariationIndex(nextIndex)
+      setHistory([nextIndex])
+    } else {
+      // Pick a random index from the unused ones
+      const nextIndex = unused[Math.floor(Math.random() * unused.length)]
+      setVariationIndex(nextIndex)
+      setHistory(prev => [...prev, nextIndex])
+    }
   }
 
   const copyToClipboard = async () => {
@@ -124,7 +143,7 @@ export default function Announce() {
 
       <div className="bg-bg-primary rounded p-2 space-y-1.5">
         <div className="flex items-center justify-between">
-          <span className="text-[10px] text-text-secondary">{variationIndex + 1}/{VARIATIONS.length}</span>
+          <span className="text-[10px] text-text-secondary">Progress: {history.length}/{VARIATIONS.length}</span>
           <span className={`text-[10px] font-mono ${isOverLimit ? 'text-error' : 'text-success'}`}>{charCount}/250</span>
         </div>
         <p className="text-[10px] text-text-primary leading-relaxed break-words line-clamp-2">{currentMessage}</p>
