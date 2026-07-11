@@ -40,7 +40,7 @@ function MenuCard({ icon, item, recipe }: { icon: React.ReactNode; item: string;
       {recipe?.ingredients && (
         <p className="text-[9px] text-text-secondary pl-4 leading-tight">
           {recipe.ingredients.map((ing, i) => (
-            <span key={i}>{ing.name} {ing.amount}x{ing.amount > 1 ? '' : ''}{i < recipe.ingredients!.length - 1 ? ', ' : ''}</span>
+            <span key={i}>{ing.name}{i < recipe.ingredients!.length - 1 ? ', ' : ''}</span>
           ))}
         </p>
       )}
