@@ -214,6 +214,30 @@ export default function SalesHistory({ refreshKey = 0, onSuccess }: SalesHistory
         ))}
       </div>
 
+      {selectedDate && (
+        <div className="bg-bg-primary rounded p-2 mb-2 border border-bg-border text-xs space-y-1.5">
+          <div className="flex justify-between items-center text-[10px] uppercase font-semibold text-text-secondary">
+            <span>Summary: {selectedDate}</span>
+            <span className="text-accent">
+              Total: {filteredOrders.reduce((sum, o) => sum + o.quantity, 0)} Paket
+            </span>
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {Object.entries(
+              filteredOrders.reduce((acc, order) => {
+                const label = PAKET_LABELS[order.paket_type as keyof typeof PAKET_LABELS]?.replace('PAKET ', '') || order.paket_type;
+                acc[label] = (acc[label] || 0) + order.quantity;
+                return acc;
+              }, {} as Record<string, number>)
+            ).map(([label, qty]) => (
+              <span key={label} className="bg-bg-surface px-1.5 py-0.5 rounded text-[10px] text-text-primary border border-bg-border">
+                {label}: <span className="text-accent font-semibold">{qty}x</span>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="space-y-1 max-h-[150px] overflow-y-auto scrollbar-hide">
         {(selectedDate ? filteredOrders : orders.slice(0, 50)).map(order => {
           const time = new Date(order.timestamp).toLocaleTimeString('id-ID', {
