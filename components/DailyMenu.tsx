@@ -1,15 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { ForkKnife, BeerBottle, Clock, Shuffle } from '@phosphor-icons/react'
-import { recipes } from '@/lib/recipes'
-import { getTodayMenuData } from '@/lib/clientDb'
+import { recipes, type Recipe } from '@/lib/recipes'
 
 interface MenuWithDetails {
   food: string
   drink: string
-  foodRecipe?: { ingredients?: { name: string; amount: number }[]; duration?: number }
-  drinkRecipe?: { ingredients?: { name: string; amount: number }[]; duration?: number }
+  foodRecipe?: Recipe
+  drinkRecipe?: Recipe
 }
 
 interface DailyMenuOptions {
@@ -25,49 +23,58 @@ function findRecipe(name: string) {
   return recipes.find(r => r.name.toLowerCase() === name.toLowerCase())
 }
 
-function MenuCard({ icon, item, recipe }: { icon: React.ReactNode; item: string; recipe?: MenuWithDetails['foodRecipe'] }) {
+function MenuCard({ icon, item, recipe }: { icon: React.ReactNode; item: string; recipe?: Recipe }) {
   return (
-    <div className="bg-bg-primary rounded p-1.5">
-      <div className="flex items-center gap-1.5 mb-0.5">
-        <span className="flex-shrink-0">{icon}</span>
-        <span className="text-xs text-text-primary font-medium truncate flex-1">{item}</span>
-        {recipe?.duration && (
-          <span className="flex items-center gap-0.5 text-[9px] text-text-secondary flex-shrink-0">
-            <Clock size={9} />{recipe.duration}s
-          </span>
+    <div className="bg-bg-primary rounded p-1.5 flex flex-col justify-between h-full">
+      <div>
+        <div className="flex items-center gap-1.5 mb-0.5">
+          <span className="flex-shrink-0">{icon}</span>
+          <span className="text-xs text-text-primary font-medium truncate flex-1">{item}</span>
+          {recipe?.duration && (
+            <span className="flex items-center gap-0.5 text-[9px] text-text-secondary flex-shrink-0">
+              <Clock size={9} />{recipe.duration}s
+            </span>
+          )}
+        </div>
+        {recipe?.ingredients && (
+          <p className="text-[9px] text-text-secondary pl-4 leading-tight mb-1">
+            {recipe.ingredients.map((ing, i) => (
+              <span key={i}>{ing.name}{i < recipe.ingredients!.length - 1 ? ', ' : ''}</span>
+            ))}
+          </p>
         )}
       </div>
-      {recipe?.ingredients && (
-        <p className="text-[9px] text-text-secondary pl-4 leading-tight">
-          {recipe.ingredients.map((ing, i) => (
-            <span key={i}>{ing.name}{i < recipe.ingredients!.length - 1 ? ', ' : ''}</span>
-          ))}
-        </p>
+      {recipe?.station && (
+        <div className="pl-4 mt-1 flex">
+          <span className={`
+            inline-flex items-center px-1 rounded text-[8px] font-medium uppercase tracking-wider
+            ${recipe.station === 'cutting_board' ? 'bg-station-cutting/20 text-station-cutting' :
+              recipe.station === 'fry_station' ? 'bg-station-fry/20 text-station-fry' :
+              recipe.station === 'drink_station' ? 'bg-station-drink/20 text-station-drink' :
+              'bg-station-stove/20 text-station-stove'}
+          `}>
+            {recipe.station.replace('_', ' ')}
+          </span>
+        </div>
       )}
     </div>
   )
 }
 
-export default function DailyMenu() {
-  const [data, setData] = useState<{
-    today: MenuWithDetails
-    apipi: MenuWithDetails
-    sundayOptions: DailyMenuOptions | null
-    apipiOptions: DailyMenuOptions
-    isSunday: boolean
-  } | null>(null)
-  const [loading, setLoading] = useState(true)
+interface DailyMenuData {
+  today: MenuWithDetails
+  apipi: MenuWithDetails
+  sundayOptions: DailyMenuOptions | null
+  apipiOptions: DailyMenuOptions
+  isSunday: boolean
+}
 
-  useEffect(() => {
-    try {
-      const d = getTodayMenuData()
-      setData(d)
-    } catch (e) {
-      console.error(e)
-    } finally {
-      setLoading(false)
-    }
-  }, [])
+interface DailyMenuProps {
+  data: DailyMenuData | null
+  setData: React.Dispatch<React.SetStateAction<DailyMenuData | null>>
+}
+
+export default function DailyMenu({ data, setData }: DailyMenuProps) {
 
   const shuffleSunday = () => {
     if (!data?.sundayOptions) return
@@ -99,7 +106,7 @@ export default function DailyMenu() {
     } : null)
   }
 
-  if (loading) {
+  if (!data) {
     return (
       <div className="animate-pulse space-y-2">
         <div className="h-3 w-20 bg-bg-border rounded" />

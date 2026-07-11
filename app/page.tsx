@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { getTodayMenuData } from '@/lib/clientDb'
 import Header from '@/components/Header'
 import DailyMenu from '@/components/DailyMenu'
 import Announce from '@/components/Announce'
@@ -11,6 +12,16 @@ import RecipeSearch from '@/components/RecipeSearch'
 
 export default function Dashboard() {
   const [refreshKey, setRefreshKey] = useState(0)
+  const [menuData, setMenuData] = useState<any>(null)
+
+  useEffect(() => {
+    try {
+      const d = getTodayMenuData()
+      setMenuData(d)
+    } catch (e) {
+      console.error(e)
+    }
+  }, [])
 
   const handleSaleSuccess = () => {
     setRefreshKey(k => k + 1)
@@ -24,10 +35,10 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
           <div className="space-y-3">
             <div className="bg-bg-surface border border-bg-border rounded-lg p-3 md:p-4">
-              <DailyMenu />
+              <DailyMenu data={menuData} setData={setMenuData} />
             </div>
             <div className="bg-bg-surface border border-bg-border rounded-lg p-3">
-              <Announce />
+              <Announce todayMenu={menuData?.today || null} />
             </div>
             <RecordSaleForm onSuccess={handleSaleSuccess} />
           </div>

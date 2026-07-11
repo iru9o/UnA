@@ -1,4 +1,4 @@
-import { recipes } from './recipes'
+import { recipes, type Recipe } from './recipes'
 import { getJakartaDayName } from './date'
 
 interface DailyMenuItem {
@@ -22,7 +22,7 @@ export const DAILY_MENU: DailyMenu = {
   Sabtu: { food: 'Bouillabaisse', drink: 'Purple Butterfly Pea Lemonade' },
   Minggu: {
     food_options: ['Cheesecake Strawberry', 'Cake Red Velvet', 'Zuppa Soup'],
-    drink_options: ['Capuccino Latte', 'Sakura Jasmine Peach']
+    drink_options: ['Capuccino Latte']
   },
   Menu_Apipi: {
     food_options: ['Cokelat Bucket Strawberry', 'Dubai Chewy Mochii', 'Lovey-Dovey Donuts', 'Pudding Lovely Bears'],
@@ -45,8 +45,8 @@ function findRecipe(name: string) {
 export interface MenuWithDetails {
   food: string
   drink: string
-  foodRecipe?: { ingredients?: { name: string; amount: number }[]; duration?: number }
-  drinkRecipe?: { ingredients?: { name: string; amount: number }[]; duration?: number }
+  foodRecipe?: Recipe
+  drinkRecipe?: Recipe
 }
 
 export function getTodayMenu(): MenuWithDetails {

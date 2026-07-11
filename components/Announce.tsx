@@ -1,8 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Megaphone, Copy, Check, Shuffle } from '@phosphor-icons/react'
-import { getTodayMenuData } from '@/lib/clientDb'
 
 interface MenuWithDetails {
   food: string
@@ -56,28 +55,17 @@ const VARIATIONS = [
     `/joball 🔔 KABAR GEMBIRA UP N ATOM BUKA FULL! 🔔 | Pas ada ${food} sama 💜 ${drink} | Menu Apipi spesial edisi pacaran ada kok 💞 | 🍳 Buka 24 jam | 📍 948 Roxwood | 📱 Cek Companies App | Custom orderan? Hubungi aja!`
 ]
 
-export default function Announce() {
-  const [menu, setMenu] = useState<{
-    today: { food: string; drink: string }
-  } | null>(null)
+interface AnnounceProps {
+  todayMenu: { food: string; drink: string } | null
+}
+
+export default function Announce({ todayMenu }: AnnounceProps) {
   const [variationIndex, setVariationIndex] = useState(0)
   const [history, setHistory] = useState<number[]>([0])
   const [copied, setCopied] = useState(false)
-  const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    try {
-      const data = getTodayMenuData()
-      setMenu(data)
-    } catch (e) {
-      console.error(e)
-    } finally {
-      setLoading(false)
-    }
-  }, [])
-
-  const currentMessage = menu?.today
-    ? VARIATIONS[variationIndex](menu.today.food.toUpperCase(), menu.today.drink.toUpperCase())
+  const currentMessage = todayMenu
+    ? VARIATIONS[variationIndex](todayMenu.food.toUpperCase(), todayMenu.drink.toUpperCase())
     : ''
 
   const charCount = currentMessage.length
@@ -120,7 +108,7 @@ export default function Announce() {
     }
   }
 
-  if (loading) {
+  if (!todayMenu) {
     return (
       <div className="animate-pulse space-y-2">
         <div className="h-3 w-16 bg-bg-border rounded" />
